@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://unpkg.com/vue"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <link rel="stylesheet" href="Vcss.css" type="text/css">
+</head>
+<body>
+    <!--<div id="demo">{{ fullName }}</div>-->
+
+    <div id="example">
+        <!--<p :class="classList">-->
+            <!--Ask you yes/no question:-->
+            <!--<input v-model="question">-->
+        <!--</p>-->
+        <!--<p :style="styleObject">-->
+            <!--{{ answer }}-->
+        <!--</p>-->
+        <!--<img :src="url">-->
+        <!--<template v-if="loginType === 'username'">-->
+            <!--<label>Username</label>-->
+            <!--<input placeholder="Enter your username">-->
+        <!--</template>-->
+        <!--<template v-else>-->
+            <!--<label>Email</label>-->
+            <!--<input placeholder="Enter your email address">-->
+        <!--</template>-->
+        <!--<button @click="changeType">Toggle login type</button>-->
+
+        <div v-for="(item,index) in items" :key="index">
+            {{item}}
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script type="text/javascript" src="Vjs.js"></script>
+
+</html>
